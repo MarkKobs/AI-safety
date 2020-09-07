@@ -11,7 +11,7 @@
     + [3.5 Lipschitzian Property](#35-lipschitzian-property)
     + [3.6 Relationship between Properties](#36-relationship-between-properties)
     + [3.7 Instancewise Interpretability](#37-instancewise-interpretability)
-  * [Verification](#verification-1)
+  * [4. Verification](#4-verification)
     + [4.1 Deterministic,Constraint,Solvers](#41-deterministic-constraint-solvers)
       - [SMT-based](#smt-based)
       - [MILP](#milp)
@@ -57,7 +57,7 @@ Certification(认证)是使用一系列高等级的规则以保证系统部署�
 ### 3.6 Relationship between Properties
 ### 3.7 Instancewise Interpretability
 
-## Verification
+## 4. Verification
 该文将不同的验证方式根据它们所使用的不同的技术分为4个种类：
 1. constraints solving
 2. search based approach
