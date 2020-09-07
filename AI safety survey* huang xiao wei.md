@@ -1,7 +1,9 @@
+# Safety and Trustworthiness of Deep Neural Networks: A survey*
+需要重点看的章节有一、二、三、四、七、八
 - [Safety and Trustworthiness of Deep Neural Networks: A survey*](#safety-and-trustworthiness-of-deep-neural-networks--a-survey-)
-  * [Introduction](#introduction)
+  * [1. Introduction](#1-introduction)
     + [Verification](#verification)
-  * [Safety problems and Safety Properties](#safety-problems-and-safety-properties)
+  * [3. Safety problems and Safety Properties](#3-safety-problems-and-safety-properties)
     + [3.1 Adversarial Examples](#31-adversarial-examples)
     + [3.2 Local Robustnes Property](#32-local-robustnes-property)
     + [3.3 Output Reachability Property](#33-output-reachability-property)
@@ -27,12 +29,7 @@
       - [Lipschitz Constant Estimation by Extreme Value Theory](#lipschitz-constant-estimation-by-extreme-value-theory)
       - [Robustness Estimation](#robustness-estimation)
 
-<small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
-
-# Safety and Trustworthiness of Deep Neural Networks: A survey*
-需要重点看的章节有一、二、三、四、七、八
-
-## Introduction
+## 1. Introduction
 
 > Trustworthiness = Certification + Explanation
 
@@ -48,7 +45,9 @@ Certification(认证)是使用一系列高等级的规则以保证系统部署�
 2. 找到另一种更简单的模型(model)可以用来推测DNN的结果 7.4 7.5
 3. information-flow explanation 7.6
 
-## Safety problems and Safety Properties
+第二章基础知识跳过
+
+## 3. Safety problems and Safety Properties
 ### 3.1 Adversarial Examples
 ### 3.2 Local Robustnes Property
 ### 3.3 Output Reachability Property
