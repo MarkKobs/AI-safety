@@ -28,6 +28,18 @@
     + [4.4 Statistical method](#44-statistical-method)
       - [Lipschitz Constant Estimation by Extreme Value Theory](#lipschitz-constant-estimation-by-extreme-value-theory)
       - [Robustness Estimation](#robustness-estimation)
+    + [8. Future Challenges](#8-future-challenges)
+      - [8.1 Distance Metrics closer to Human Perception](#81-distance-metrics-closer-to-human-perception)
+      - [8.2 Improvement to Robustness](#82-improvement-to-robustness)
+      - [8.3 Other Machine Learning Models](#83-other-machine-learning-models)
+      - [8.4 Verification Completeness](#84-verification-completeness)
+      - [8.5 Scalable Verification with Tighter Bounds](#85-scalable-verification-with-tighter-bounds)
+      - [8.6 Validation of Testing Approaches](#86-validation-of-testing-approaches)
+      - [8.7 Learning-based Systems](#87-learning-based-systems)
+      - [8.8 Distributional Shift and Run-time Monitoring](#88-distributional-shift-and-run-time-monitoring)
+      - [8.9 Formulation of Interpretability](#89-formulation-of-interpretability)
+      - [8.10 Application of Interpretability to other Tasks](#810-application-of-interpretability-to-other-tasks)
+      - [8.11 Human-in-the-loop](#811-human-in-the-loop)
 
 ## 1. Introduction
 
@@ -115,3 +127,29 @@ Interval、Zonotope、Polyhedron
 #### Lipschitz Constant Estimation by Extreme Value Theory
 可以验证Lipschitz property.
 #### Robustness Estimation
+
+![Interpreatation](image/Interpreatation.jpg)
+
+### 8. Future Challenges
+#### 8.1 Distance Metrics closer to Human Perception
+> Well-known metrics including L0,L1,L2,...Linf-norms, it has been argued that better metrics may be needed.
+#### 8.2 Improvement to Robustness
+> DNN verification and testing tools are able to find e.g., counterexamples to local robustness (i.e., adversarial examples), it is relatively unclear how these counterexamples can be utilised to improve the correctness (such as the local robustness) of the DNN, other than the straightforward method of adding the adversarial examples into the training dataset, which may lead to bias towards those input subspaces with adversarial examples. Section 6.5 reviews a few techniques such as adversarial training.
+#### 8.3 Other Machine Learning Models
+> Research is needed to consider other types of neural networks, such as deep reinforcement learning models and recursive neu- ral networks, and other types of machine learning algorithms, such as SVM, k-NN, naive Bayesian classifier, etc.
+#### 8.4 Verification Completeness
+> he properties in Section 3 are expressed in different ways, and for each property, a set of ad hoc analysis techniques are developed to work with them. Research is needed to develop a high-level language that can express a set of properties related to the correctness of a DNN.
+#### 8.5 Scalable Verification with Tighter Bounds
+> A possible direction will be to develop an abstraction and refinement framework, like [clarke] did for concurrent systems, and it will be interesting to see how it is related to the layer-by-layer refinement.
+#### 8.6 Validation of Testing Approaches
+#### 8.7 Learning-based Systems
+> To analyse such learning-enabled systems, methods are needed to interface the analysis techniques for individual components.
+
+系统级别和组件级别的interface，gap
+
+#### 8.8 Distributional Shift and Run-time Monitoring
+#### 8.9 Formulation of Interpretability
+> 尽管有[Lipton，2018]之类的综合调查旨在从许多不同角度研究这一概念，但对于可解释性的讨论却没有严格的定义。现有研究能够提供有关DNN的各种局部信息，由于缺乏系统的定义，因此很难将这些作品进行相互比较。近来，已经进行了一些工作以通过单一的，统一的方法来适应几种相似的方法，以进行比较。例如，[Olah等，2017]提出许多可视化方法都是基于具有不同正则化条件的优化，[Lundberg and Lee，2017]使用Shapley值来解释一些具有加性模型的基于属性的方法，并且[ Ancona et al。，2018]使用了经过改进的梯度函数来适应一些基于梯度的方法。虽然对解释性只有一个定义可能是不可行的，但有必要从几个方面正式定义它。
+
+#### 8.10 Application of Interpretability to other Tasks
+#### 8.11 Human-in-the-loop
