@@ -1,7 +1,36 @@
+- [Safety and Trustworthiness of Deep Neural Networks: A survey*](#safety-and-trustworthiness-of-deep-neural-networks--a-survey-)
+  * [Introduction](#introduction)
+    + [Verification](#verification)
+  * [Safety problems and Safety Properties](#safety-problems-and-safety-properties)
+    + [3.1 Adversarial Examples](#31-adversarial-examples)
+    + [3.2 Local Robustnes Property](#32-local-robustnes-property)
+    + [3.3 Output Reachability Property](#33-output-reachability-property)
+    + [3.4 Interval Property](#34-interval-property)
+    + [3.5 Lipschitzian Property](#35-lipschitzian-property)
+    + [3.6 Relationship between Properties](#36-relationship-between-properties)
+    + [3.7 Instancewise Interpretability](#37-instancewise-interpretability)
+  * [Verification](#verification-1)
+    + [4.1 Deterministic,Constraint,Solvers](#41-deterministic-constraint-solvers)
+      - [SMT-based](#smt-based)
+      - [MILP](#milp)
+    + [4.2 One-sided,lower or upper bound](#42-one-sided-lower-or-upper-bound)
+      - [Abstract Interpretation（抽象解释）](#abstract-interpretation------)
+      - [Convex Optimisation(凸优化)](#convex-optimisation-----)
+      - [Interval Analysis（区间运算）](#interval-analysis------)
+      - [Output Reachable Set Estimation(可达性集合估算)](#output-reachable-set-estimation---------)
+      - [Linear Approximation of ReLU Networks](#linear-approximation-of-relu-networks)
+    + [4.3 Approaches with converging Upper and Lower Bounds](#43-approaches-with-converging-upper-and-lower-bounds)
+      - [Layer-by-Layer Refinement](#layer-by-layer-refinement)
+      - [Reduction to A Two-Player Turn-based Game](#reduction-to-a-two-player-turn-based-game)
+      - [Global Optimisation Based Approaches](#global-optimisation-based-approaches)
+    + [4.4 Statistical method](#44-statistical-method)
+      - [Lipschitz Constant Estimation by Extreme Value Theory](#lipschitz-constant-estimation-by-extreme-value-theory)
+      - [Robustness Estimation](#robustness-estimation)
+
+<small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
+
 # Safety and Trustworthiness of Deep Neural Networks: A survey*
 需要重点看的章节有一、二、三、四、七、八
-
-[TOC]
 
 ## Introduction
 
